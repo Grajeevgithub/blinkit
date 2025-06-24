@@ -1,47 +1,81 @@
-# 🛒 BlinkIT Grocery Sales Analysis Dashboard
+# 🧾 BlinkIT Grocery Sales Dashboard
 
-This project analyzes BlinkIT's grocery sales using **Power BI** for visualization and **SQL** for backend data querying. The goal is to extract meaningful insights into item performance, outlet behavior, and customer ratings to support business decisions.
-
----
-
-## 📊 Dashboard Overview
-
-- 📈 **Sales Trends** over Outlet Establishment Year
-- 🛍️ **Sales Distribution** by Item Type, Outlet Size, and Outlet Location
-- 🍩 **Sales by Fat Content** (Regular vs Low Fat)
-- 🧾 **Detailed Outlet Metrics** (Total Sales, Avg Sales, Ratings, Items)
-- ✅ KPIs: Total Sales, Average Rating, Average Sales, Unique Items
-
-> 📍 Created using Power BI  
-> 📎 Image Preview:  
-![BlinkIT Dashboard](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
+📊 A dynamic Power BI dashboard analyzing grocery sales performance using BlinkIT data. This project focuses on key business metrics such as Total Sales, Ratings, Item Visibility, and Outlet Trends — providing actionable insights into product demand, outlet efficiency, and consumer behavior.
 
 ---
 
-## 🗃️ Dataset
+## 🔍 Project Objective
 
-- 📂 File: `BlinkIT.csv`
-- 📌 Columns include:
-  - `Item Type`, `Item Fat Content`, `Item Weight`, `Item Visibility`, `Rating`, `Sales`, `Outlet Size`, `Outlet Type`, `Outlet Location Type`, and `Outlet Establishment Year`
-- 💰 **Sales converted to thousands (₹ '000)** for standardization.
+To analyze and visualize grocery sales data from BlinkIT to identify:
+- Top-selling item types and fat content categories
+- Sales trends based on outlet establishment year
+- Outlet performance by location, size, and type
+- Key KPIs like average rating, sales, and product distribution
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Power BI** – Dashboard creation, data modeling, and DAX measures
+- **SQL (MySQL / SQLite)** – Data analysis using aggregation queries
+- **CSV (Excel)** – Initial data handling
+- **GitHub** – Project hosting and version control
+
+---
+
+## 📂 Dataset
+
+- Source: Internal BlinkIT-like Grocery Dataset (simulated)
+- Records: 8,523
+- Features: Item Type, Sales, Item Fat Content, Rating, Outlet Type, Establishment Year, Size, Location, and more
+- Notes: Sales values were converted into ₹ '000 (thousands)
+
+---
+
+## 🧮 KPIs Used
+
+- 📈 **Total Sales (₹000)**  
+- 🌟 **Average Rating**  
+- 📦 **Total Unique Items**  
+- 🧾 **Average Sales per Outlet**  
+- 🛒 **Sales by Item Type, Outlet Type, and Fat Content**
+
+---
+
+## 📊 Dashboard Preview
+
+![Main Dashboard](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
+
+> Fully interactive Power BI dashboard with slicers for Outlet Type, Item Type, Fat Content, and Location. Includes KPI cards, bar charts, pie charts, line graphs, and a detailed outlet metrics table.
+
+---
+
+## 📌 Key Insights
+
+- **Regular fat content items** contribute slightly more to total sales than low-fat options.
+- **Tier 1 outlets** generate the highest sales volume, followed by Tier 2.
+- **Outlets established after 2015** show growing performance in average sales and rating.
+- **Rating consistency** is high, with most products rated between 4–5 stars.
+- **Item Visibility** varies significantly across outlet types, impacting discoverability.
 
 ---
 
 ## 🧮 SQL Analysis
 
-All major insights were first explored using SQL.
+In addition to Power BI, SQL was used to query the raw data for backend insights.
 
-📁 [`BlinkIT_SQL_Queries.sql`](../main/blink%20it/BlinkIT_SQL_Queries.sql) includes:
+**Example Queries:**
+- Top 5 items by total sales  
+- Sales by outlet type and year  
+- Fat content distribution by sales  
+- Outlet rating by location
 
-- 🔝 Top 5 Selling Items
-- 📊 Total & Avg Sales by Outlet Type
-- 🕒 Sales Trend over the Years
-- 🧈 Sales by Fat Content
-- ⭐ Rating by Location Type
+👉 [View SQL Queries](../main/blink%20it/BlinkIT_SQL_Queries.sql)
 
-Sample query:
-```sql
-SELECT Outlet_Type, ROUND(AVG(Sales), 2) AS Avg_Sales
-FROM BlinkIT_Grocery
-GROUP BY Outlet_Type;
+---
 
+## 📬 Connect with Me
+
+**Rajeev Prakash**  
+🔗 [GitHub](https://github.com/Grajeevgithub)  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
