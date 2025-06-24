@@ -1,54 +1,46 @@
 # 🛒 BlinkIT Grocery Sales Analysis Dashboard
 
-A data analysis and visualization project using **Power BI** and **SQL** on BlinkIT’s grocery sales data. The goal is to extract actionable insights about product performance, outlet behavior, and overall sales trends.
+This project analyzes BlinkIT's grocery sales using **Power BI** for visualization and **SQL** for backend data querying. The goal is to extract meaningful insights into item performance, outlet behavior, and customer ratings to support business decisions.
 
 ---
 
 ## 📊 Dashboard Overview
 
-- 🔹 **Sales Trends** by Year and Outlet Type
-- 🔹 **Top Selling Item Types**
-- 🔹 **Sales by Item Fat Content**
-- 🔹 **Outlet Insights** (Size, Type, Location)
-- 🔹 **Customer Ratings Distribution**
-- 🔹 Key KPIs: Total Sales, Average Sales, Average Rating
+- 📈 **Sales Trends** over Outlet Establishment Year
+- 🛍️ **Sales Distribution** by Item Type, Outlet Size, and Outlet Location
+- 🍩 **Sales by Fat Content** (Regular vs Low Fat)
+- 🧾 **Detailed Outlet Metrics** (Total Sales, Avg Sales, Ratings, Items)
+- ✅ KPIs: Total Sales, Average Rating, Average Sales, Unique Items
 
-> ✅ Dashboard created in **Power BI** and exported visuals included.
-
-![Dashboard Screenshot](https://github.com/Grajeevgithub/blinkit/tree/main/blink%20it/images)
+> 📍 Created using Power BI  
+> 📎 Image Preview:  
+![BlinkIT Dashboard](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
 
 ---
 
-## 🗃️ Dataset Info
+## 🗃️ Dataset
 
-- 📄 File: `BlinkIT.csv`
-- 📌 Columns:
-  - Item Type, Item Fat Content, Sales, Rating, Outlet Size, Outlet Type, etc.
-- 🔄 Sales values converted to `₹ Thousands` for readability.
+- 📂 File: `BlinkIT.csv`
+- 📌 Columns include:
+  - `Item Type`, `Item Fat Content`, `Item Weight`, `Item Visibility`, `Rating`, `Sales`, `Outlet Size`, `Outlet Type`, `Outlet Location Type`, and `Outlet Establishment Year`
+- 💰 **Sales converted to thousands (₹ '000)** for standardization.
 
 ---
 
 ## 🧮 SQL Analysis
 
-SQL queries were written to extract key insights like:
+All major insights were first explored using SQL.
 
-- 🏆 Top 5 Item Types by Total Sales
-- 📍 Average Sales by Outlet Type
-- 📈 Year-wise Sales Trend
+📁 [`BlinkIT_SQL_Queries.sql`](../main/blink%20it/BlinkIT_SQL_Queries.sql) includes:
+
+- 🔝 Top 5 Selling Items
+- 📊 Total & Avg Sales by Outlet Type
+- 🕒 Sales Trend over the Years
+- 🧈 Sales by Fat Content
 - ⭐ Rating by Location Type
 
-SQL file: [`BlinkIT_SQL_Queries.sql`](BlinkIT_SQL_Queries.sql)
-
----
-
-## 🛠️ Tools Used
-
-| Tool       | Purpose                     |
-|------------|-----------------------------|
-| **Power BI** | Data visualization & dashboard |
-| **MySQL / PostgreSQL** | SQL querying and analysis |
-| **Pandas (Python)** | (Optional) EDA before loading |
-| **GitHub** | Project hosting             |
-
----
-
+Sample query:
+```sql
+SELECT Outlet_Type, ROUND(AVG(Sales), 2) AS Avg_Sales
+FROM BlinkIT_Grocery
+GROUP BY Outlet_Type;
