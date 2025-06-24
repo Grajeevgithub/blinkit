@@ -52,5 +52,3 @@ SQL file: [`BlinkIT_SQL_Queries.sql`](BlinkIT_SQL_Queries.sql)
 
 ---
 
-## 📁 Folder Structure
-
