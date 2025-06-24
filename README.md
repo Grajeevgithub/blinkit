@@ -70,7 +70,7 @@ In addition to Power BI, SQL was used to query the raw data for backend insights
 - Fat content distribution by sales  
 - Outlet rating by location
 
-👉 [View SQL Queries](../main/blink%20it/BlinkIT_SQL_Queries.sql)
+👉 [View SQL Queries](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/sql/BlinkIT_SQL_Queries.sql)
 
 ---
 
