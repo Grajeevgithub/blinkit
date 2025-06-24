@@ -15,7 +15,7 @@ A data analysis and visualization project using **Power BI** and **SQL** on Blin
 
 > ✅ Dashboard created in **Power BI** and exported visuals included.
 
-![Dashboard Screenshot](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
+![Dashboard Screenshot](https://github.com/Grajeevgithub/blinkit/tree/main/blink%20it/images)
 
 ---
 
