@@ -78,4 +78,4 @@ In addition to Power BI, SQL was used to query the raw data for backend insights
 
 **Rajeev Prakash**  
 🔗 [GitHub](https://github.com/Grajeevgithub)  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/giramoni-rajeev-prakash-29072ba6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BhR8whxTdRN2RRCmBe%2FR2OQ%3D%3D))  
