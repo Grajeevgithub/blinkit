@@ -44,3 +44,4 @@ Sample query:
 SELECT Outlet_Type, ROUND(AVG(Sales), 2) AS Avg_Sales
 FROM BlinkIT_Grocery
 GROUP BY Outlet_Type;
+
