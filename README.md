@@ -44,7 +44,7 @@ To analyze and visualize grocery sales data from BlinkIT to identify:
 
 ## 📊 Dashboard Preview
 
-[🔗 Click here to view the Dashboard Image](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
+[🔗 Dashboard Image](https://github.com/Grajeevgithub/blinkit/blob/main/blink%20it/images/blinkit.png)
 
 > Fully interactive Power BI dashboard with slicers for Outlet Type, Item Type, Fat Content, and Location. Includes KPI cards, bar charts, pie charts, line graphs, and a detailed outlet metrics table.
 
